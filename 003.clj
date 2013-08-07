@@ -1,4 +1,4 @@
-(ns projecteuler.problem3
+(ns project-euler.problem3
   (:require [clojure.test :refer [with-test is]]))
 
 (defn prime? [n]
@@ -11,4 +11,4 @@
       (some #(if (zero? (mod number %)) %) primes)))
   (is (= 29 (largest-prime-factor 13195))))
 
-(clojure.test/run-tests 'projecteuler.problem3)
+(clojure.test/run-tests 'project-euler.problem3)
